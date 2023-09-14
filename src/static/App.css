@@ -1,0 +1,59 @@
+:root {
+  --magenta: #B81365;
+  --orange: #FF9F1C;
+  --ash-gray: #BFD3C1;
+  --teal: #89BD9E;
+  --vista-blue: #7F96FF;
+  --charcoal: #2F4858;
+}
+
+.App {
+  text-align: center;
+}
+
+/* views */
+.home-view {
+  padding-top: 100px;
+}
+
+/* components */
+.about-component, .skills-component, .projects-component, .footer-component {
+  padding: 10% 15%;
+}
+
+.contact-component {
+  align-self: center;
+  padding: 5%;
+  margin-bottom: 500px;
+}
+
+/* header */
+.navbar {
+  background-color: white;
+  box-shadow: 0 1px 20px 0px gray;
+}
+
+.nav-links {
+  text-decoration: none;
+  font-size: xx-large;
+  color: black;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.nav-link:hover {
+  color: var(--orange);
+}
+
+/* intro */
+.photo>img {
+  border-radius: 50%;
+}
+
+/* skills */
+.skill {
+  width: 100px;
+}
+
+
+
