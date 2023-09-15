@@ -12,9 +12,8 @@ const Intro = () => {
             translateY: 50,
             duration: 2000,
             loop: true,
-            easing: "easeInOutQuad", // Easing function for smooth animation
+            easing: "easeInOutQuad",
             direction: 'alternate',
-            // complete: animateArrow, // Repeat the animation infinitely
         });
     };
     useEffect(() => {

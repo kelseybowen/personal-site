@@ -28,9 +28,14 @@
 }
 
 /* header */
+.header-component {
+  align-items: center;
+}
+
 .navbar {
   background-color: white;
   box-shadow: 0 1px 20px 0px gray;
+  align-items: baseline;
 }
 
 .nav-links {
@@ -38,7 +43,7 @@
   font-size: xx-large;
   color: black;
   align-items: center;
-  padding-right: 10px;
+  padding-right: 140px;
 }
 
 .nav-link:hover {
@@ -55,5 +60,18 @@
   width: 100px;
 }
 
+/* projects */
+.project {
+  margin: 0 auto;
+  padding: 10px;
+  border: 10px black solid;
+  border-radius: 10px;
+  width: 650px;
+  height: 450px;
+}
+
+.icons {
+  margin: 20px;
+}
 
 

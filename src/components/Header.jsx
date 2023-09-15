@@ -1,5 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import kbLogo from '../static/images/kbLogo.svg';
 
 const Header = () => {
 
@@ -10,9 +11,11 @@ const Header = () => {
 
     return (
         <div className='container-fluid'>
-            <nav className="navbar fixed-top navbar-expand-sm mb-5 p-3">
+            <nav className="navbar fixed-top navbar-expand-sm mb-5 p-1">
                 <div className="navbar-nav">
-                    <a href="/" className="navbar-brand">kb</a>
+                    <a href="/">
+                        <img src={kbLogo} alt="personal logo" height="60px" className='p-2'/>
+                    </a>
                     <div className='nav-links position-absolute top-0 end-0 d-flex'>
                         <Link className='nav-link' onClick={() => handleNavClick("about")}>About</Link>
                         <Link className='nav-link' onClick={() => handleNavClick("skills")}>Skills</Link>
