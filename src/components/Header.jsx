@@ -18,8 +18,8 @@ const Header = () => {
                     </a>
                     <div className='nav-links position-absolute top-0 end-0 d-flex'>
                         <Link className='nav-link' onClick={() => handleNavClick("about")}>About</Link>
-                        <Link className='nav-link' onClick={() => handleNavClick("skills")}>Skills</Link>
                         <Link className='nav-link' onClick={() => handleNavClick("projects")}>Projects</Link>
+                        <Link className='nav-link' onClick={() => handleNavClick("skills")}>Skills</Link>
                         <Link className="nav-link" to={'https://github.com/kelseybowen'}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="black"
                                 className="bi bi-github gh-svg nav-link" viewBox="0 0 16 16">

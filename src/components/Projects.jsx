@@ -1,11 +1,13 @@
 import React from 'react';
 import valveFinderEx from '../static/images/valveFinderExample.png';
 import tvShowsExample from '../static/images/tvShowsExample.png';
+import ticTacToeEx from '../static/images/ticTacToeExample.png';
 import flaskIcon from '../static/images/icons8-flask.svg';
 import pythonIcon from '../static/images/icons8-python.svg';
 import mySqlIcon from '../static/images/icons8-mysql-100.png';
 import javaIcon from '../static/images/icons8-java.svg';
 import springIcon from '../static/images/icons8-spring-boot.svg';
+import reactIcon from '../static/images/icons8-react.svg';
 
 const Projects = () => {
 
@@ -42,6 +44,14 @@ const Projects = () => {
                         <img src={javaIcon} alt="java icon" height="100px" className='mx-3' />
                         <img src={springIcon} alt="spring boot icon" height="100px" className='mx-3' />
                         <img src={mySqlIcon} alt="mysql icon" height="100px" className='mx-3' />
+                    </div>
+                </div>
+                <div className="example mx-5 p-4">
+                    <div className="project">
+                        <img src={ticTacToeEx} alt="projectExample3" height="400px" />
+                    </div>
+                    <div className="icons">
+                        <img src={reactIcon} alt="react icon" height="100px" className='mx-3' />
                     </div>
                 </div>
             </div>
