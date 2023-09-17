@@ -43,11 +43,15 @@
   font-size: xx-large;
   color: black;
   align-items: center;
-  padding-right: 140px;
+  padding-right: 10px;
 }
 
 .nav-link:hover {
   color: var(--orange);
+}
+
+.gh-svg:hover, .li-svg:hover {
+  fill: #FF9F1C;
 }
 
 /* intro */
@@ -57,10 +61,22 @@
 
 /* skills */
 .skill {
-  width: 100px;
+  width: 150px;
+  height: 60px;
+  font-size: large;
 }
 
 /* projects */
+.project-examples-container {
+  display: flex;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+}
+
+.example {
+  width: 100%;
+}
+
 .project {
   margin: 0 auto;
   padding: 10px;
