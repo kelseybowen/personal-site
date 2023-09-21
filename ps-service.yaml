@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ps
+spec:
+  type: LoadBalancer
+  selector:
+    app: ps
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000

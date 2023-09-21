@@ -7,18 +7,75 @@
   --charcoal: #2F4858;
 }
 
+
+/* ---------------------------------------------- sm width devices */
+@media (max-width: 767.98px) { 
+  .nav-link {
+    font-size: medium;
+  }
+  #profile-photo {
+    height: 250px;
+    width: 250px;
+  }
+  p.about-text {
+    font-size: 15px;
+  }
+  .project-examples-container{
+    display: block;
+  }
+  #projects {
+    padding: 2% 14%;
+  }
+  .icon {
+    height: 60px;
+  }
+  .skill {
+    font-size: xx-small;
+    margin: 5px;
+  }
+}
+/* ---------------------------------------------- lg width devices */
+@media (min-width: 991.98px) {
+  .row {
+    max-width: 50vw;    
+  }
+  .skill {
+    margin: 10px;
+  }
+}
+/* ---------------------------------------------- lg height devices */
+@media (min-height: 800px) {
+  #intro-component {
+    padding-top: 200px;
+  }
+  .bi-chevron-double-down {
+    margin-top: 50px;
+  }
+  #about {
+    padding-bottom: 10px;
+  }
+  .example {
+    margin-bottom: 100px;
+  }
+}
+
+
 .App {
   text-align: center;
 }
 
-/* views */
+/* ---------------------------------------------- views */
 .home-view {
   padding-top: 100px;
 }
 
-/* components */
-.about-component, .skills-component, .projects-component, .footer-component {
+/* ---------------------------------------------- components */
+.about-component, .skills-component, .projects-component {
   padding: 10% 15%;
+}
+
+.footer-component {
+  padding: 0px;
 }
 
 .contact-component {
@@ -27,7 +84,7 @@
   margin-bottom: 500px;
 }
 
-/* header */
+/* ---------------------------------------------- header */
 .header-component {
   align-items: center;
 }
@@ -47,34 +104,28 @@
 }
 
 .nav-link:hover {
-  color: var(--orange);
+  color: var(--teal);
 }
 
 .gh-svg:hover, .li-svg:hover {
-  fill: #FF9F1C;
+  fill: var(--teal);
 }
 
-/* intro */
+/* ---------------------------------------------- intro */
 .photo>img {
   border-radius: 50%;
 }
 
-/* skills */
-.skill {
-  width: 150px;
-  height: 60px;
-  font-size: large;
+/* ---------------------------------------------- about */
+.about-text {
+  font-size: larger;
+
 }
 
-/* projects */
-.project-examples-container {
-  display: flex;
-  overflow-x: scroll;
-  flex-wrap: nowrap;
-}
-
+/* ---------------------------------------------- projects */
 .example {
-  width: 100%;
+  margin: 20px;
+  padding-bottom: 30px;
 }
 
 .project {
@@ -82,12 +133,25 @@
   padding: 10px;
   border: 10px black solid;
   border-radius: 10px;
-  width: 650px;
-  height: 450px;
 }
 
-.icons {
-  margin: 20px;
+#vf-ex, #tv-shows-ex, #tic-tac-toe-ex {
+  width: 60vw;
+  margin: auto;
+}
+
+.icon {
+  padding: 10px 15px;
+}
+
+/* ---------------------------------------------- skills */
+.skill {
+  width: 130px;
+  height: 50px;
+  font-size: large;
+  background-color: rgb(65, 65, 65);
+  color: white;
+  border-radius: 6px;
 }
 
 

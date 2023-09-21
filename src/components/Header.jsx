@@ -14,12 +14,13 @@ const Header = () => {
             <nav className="navbar fixed-top navbar-expand-sm mb-5 p-1">
                 <div className="navbar-nav">
                     <a href="/">
-                        <img src={kbLogo} alt="personal logo" height="60px" className='p-2'/>
+                        {/* <object data="" type=""></object> */}
+                        <img src={kbLogo} id='kb-logo' alt="personal logo" height="60px" className='p-2'/>
                     </a>
                     <div className='nav-links position-absolute top-0 end-0 d-flex'>
-                        <Link className='nav-link' onClick={() => handleNavClick("about")}>About</Link>
-                        <Link className='nav-link' onClick={() => handleNavClick("projects")}>Projects</Link>
-                        <Link className='nav-link' onClick={() => handleNavClick("skills")}>Skills</Link>
+                        <Link className='nav-link mx-2' onClick={() => handleNavClick("about")}>About</Link>
+                        <Link className='nav-link mx-2' onClick={() => handleNavClick("projects")}>Projects</Link>
+                        <Link className='nav-link mx-2' onClick={() => handleNavClick("skills")}>Skills</Link>
                         <Link className="nav-link" to={'https://github.com/kelseybowen'}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="black"
                                 className="bi bi-github gh-svg nav-link" viewBox="0 0 16 16">

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ps
+  labels:
+    app: ps
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ps
+  template:
+    metadata:
+      labels:
+        app: ps
+    spec:
+      containers:
+      - name: ps
+        image: kelseybowen/personal-site
+        ports:
+        - containerPort: 3000
