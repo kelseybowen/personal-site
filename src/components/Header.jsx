@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import kbLogo from '../static/images/kbLogo.svg';
+import kbLogo2 from '../static/images/kbLogo2.svg'
 
 const Header = () => {
 
@@ -15,7 +16,7 @@ const Header = () => {
                 <div className="navbar-nav">
                     <a href="/">
                         {/* <object data="" type=""></object> */}
-                        <img src={kbLogo} id='kb-logo' alt="personal logo" height="60px" className='p-2'/>
+                        <img src={kbLogo2} id='kb-logo' alt="personal logo" height="60px" className='p-2'/>
                     </a>
                     <div className='nav-links position-absolute top-0 end-0 d-flex'>
                         <Link className='nav-link mx-2' onClick={() => handleNavClick("about")}>About</Link>

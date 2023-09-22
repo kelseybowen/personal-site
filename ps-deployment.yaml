@@ -19,3 +19,18 @@ spec:
         image: kelseybowen/personal-site
         ports:
         - containerPort: 3000
+        volumeMounts:
+        - name: secret-volume
+          mountPath: /etc/secret-volume
+          readOnly: true
+        env:
+        - name: SSL_CRT_FILE
+          value: /etc/secret-volume/tls.crt
+        - name: SSL_KEY_FILE
+          value: /etc/secret-volume/tls.key
+        - name: HTTPS
+          value: "true"
+      volumes:
+      - name: secret-volume
+        secret:
+          secretName: wildcard-cert

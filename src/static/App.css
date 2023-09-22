@@ -44,9 +44,9 @@
   }
 }
 /* ---------------------------------------------- lg height devices */
-@media (min-height: 800px) {
+@media (min-height: 1000px) {
   #intro-component {
-    padding-top: 200px;
+    padding-top: 120px;
   }
   .bi-chevron-double-down {
     margin-top: 50px;
