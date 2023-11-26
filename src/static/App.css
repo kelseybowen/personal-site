@@ -131,11 +131,15 @@
 .project {
   margin: 0 auto;
   padding: 10px;
-  border: 10px black solid;
+  border: 10px rgb(212, 212, 212) solid;
   border-radius: 10px;
 }
 
-#vf-ex, #tv-shows-ex, #tic-tac-toe-ex {
+.live-project {
+  border: 10px var(--charcoal) solid;
+}
+
+#crc-ex, #vf-ex, #tv-shows-ex, #tic-tac-toe-ex {
   width: 60vw;
   margin: auto;
 }

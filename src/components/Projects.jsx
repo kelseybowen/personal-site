@@ -1,4 +1,5 @@
 import React from 'react';
+import crcEx from '../static/images/CRCExample.png';
 import valveFinderEx from '../static/images/valveFinderExample.png';
 import tvShowsExample from '../static/images/tvShowsExample.png';
 import ticTacToeEx from '../static/images/ticTacToeExample.png';
@@ -13,13 +14,20 @@ const Projects = () => {
 
     return (
         <div className='projects-component' id='projects'>
-            <h1 className='display-2'>Projects</h1>
-            <p className='about-text mb-5'>All projects deployed with Docker, Kubernetes and Azure</p>
+            <h1 className='display-2 mb-5'>Projects</h1>
             <div className="project-examples-container">
                 <div className="dummy-example"></div>
                 <div className="example mx-auto">
+                    <div className="project live-project col-md-11">
+                        <a href="https://www.carbonriverconsulting.com/"><img src={crcEx} id='crc-ex' alt="projectExample1" className='mt-2' /></a>
+                    </div>
+                    <div className="icons">
+                        <img src={reactIcon} alt="react icon" height="100px" className='icon mx-auto' />
+                    </div>
+                </div>
+                <div className="example mx-auto">
                     <div className="project col-md-11">
-                        <a href="https://valvefinder.kelsey-bowen.com/"><img src={valveFinderEx} id='vf-ex' alt="projectExample1" className='mt-2' /></a>
+                        <img src={valveFinderEx} id='vf-ex' alt="projectExample2" className='mt-2' />
                     </div>
                     <div className="icons">
                         <img src={pythonIcon} alt="python icon" height="100px" className='icon mx-auto' />
@@ -29,7 +37,7 @@ const Projects = () => {
                 </div>
                 <div className="example mx-auto">
                     <div className="project col-md-11">
-                        <a href="http://tvshows.kelsey-bowen.com/"><img src={tvShowsExample} id='tv-shows-ex' alt="projectExample2" /></a>
+                        <img src={tvShowsExample} id='tv-shows-ex' alt="projectExample2" />
                     </div>
                     <div className="icons">
                         <img src={javaIcon} alt="java icon" height="100px" className='icon mx-auto' />
@@ -39,7 +47,7 @@ const Projects = () => {
                 </div>
                 <div className="example mx-auto">
                     <div className="project col-md-11">
-                        <a href="http://tic-tac-toe.kelsey-bowen.com/"><img src={ticTacToeEx} id='tic-tac-toe-ex' alt="projectExample3" /></a>
+                        <img src={ticTacToeEx} id='tic-tac-toe-ex' alt="projectExample3" />
                     </div>
                     <div className="icons">
                         <img src={reactIcon} alt="react icon" height="100px" className='icon mx-auto' />
