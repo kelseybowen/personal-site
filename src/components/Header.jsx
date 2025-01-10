@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import kbLogo from '../static/images/kbLogo.svg';
-import kbLogo2 from '../static/images/kbLogo2.svg'
+import kbLogo from '../static/images/KB_logo-cropped.svg';
 
 const Header = () => {
 
@@ -14,11 +13,11 @@ const Header = () => {
         <div className='container-fluid'>
             <nav className="navbar fixed-top navbar-expand-sm mb-5 p-1">
                 <div className="navbar-nav">
+                    
                     <a href="/">
-                        {/* <object data="" type=""></object> */}
-                        <img src={kbLogo2} id='kb-logo' alt="personal logo" height="60px" className='p-2'/>
+                        <embed src={kbLogo} id='kb-logo' alt="personal logo" className='p-2'/>
                     </a>
-                    <div className='nav-links position-absolute top-0 end-0 d-flex'>
+                    <div className='nav-links top-0 end-0 d-flex'>
                         <Link className='nav-link mx-2' onClick={() => handleNavClick("about")}>About</Link>
                         <Link className='nav-link mx-2' onClick={() => handleNavClick("projects")}>Projects</Link>
                         <Link className='nav-link mx-2' onClick={() => handleNavClick("skills")}>Skills</Link>

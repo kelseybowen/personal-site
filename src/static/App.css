@@ -92,7 +92,10 @@
 .navbar {
   background-color: white;
   box-shadow: 0 1px 20px 0px gray;
-  align-items: baseline;
+}
+
+#kb-logo {
+  height: 80px;
 }
 
 .nav-links {
@@ -100,7 +103,8 @@
   font-size: xx-large;
   color: black;
   align-items: center;
-  padding-right: 10px;
+  margin: 10px;
+  position: absolute;
 }
 
 .nav-link:hover {
